@@ -21,11 +21,6 @@ namespace Business.Concrete
             return _productDal.GetAll();
         }
 
-        public IEnumerable<Product> GetByUnitPrice()
-        {
-            throw new NotImplementedException();
-        }
-
         public List<Product> GetAllByCategoryId(int id)
         {
             return _productDal.GetAll(p => p.CategoryId == id);
