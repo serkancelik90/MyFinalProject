@@ -10,6 +10,6 @@ namespace Business.Abstract
     {
       
         IDataResult <List<Category>> GetAll();
-        IDataResult <Category> GelById(int categoryId);
+        IDataResult <Category> GetById(int categoryId);
     }
 }
